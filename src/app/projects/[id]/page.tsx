@@ -42,13 +42,12 @@ export default async function BlogPost({ params, searchParams }: any) {
           {post.subheading}
         </h2>
 
-        <div className="bg-black w-full h-[595px] flex flex-col items-center justify-center rounded-xl mt-24">
+        <div className="bg-black w-full relative aspect-square md:aspect-video flex flex-col items-center justify-center rounded-xl mt-6">
           <Image
             src={post.image1}
             alt="alt"
-            width={200}
-            height={200}
-            className="my-auto pt-12"
+            fill={true}
+            className="my-auto rounded-xl object-cover"
           />
         </div>
 
@@ -65,13 +64,12 @@ export default async function BlogPost({ params, searchParams }: any) {
         <p className="mt-6 text-xl text-[#222]">{post.description1}</p>
         <p className="mt-4 text-xl text-[#222]">{post.description2}</p>
 
-        <div className="bg-black w-full h-[595px] flex flex-col items-center justify-center rounded-xl mt-24">
+        <div className="bg-black w-full relative aspect-square md:aspect-video rounded-xl mt-9">
           <Image
             src={post.image2}
             alt="alt"
-            width={200}
-            height={200}
-            className="my-auto pt-12"
+            fill={true}
+            className="my-auto rounded-xl object-cover"
           />
         </div>
         <div className="mt-6 flex flex-row justify-between text-[#222] text-xl font-mono font-thin">
@@ -79,13 +77,12 @@ export default async function BlogPost({ params, searchParams }: any) {
           <p>({post.caption1year})</p>
         </div>
 
-        <div className="bg-black w-full h-[595px] flex flex-col items-center justify-center rounded-xl mt-9">
+        <div className="bg-black w-full relative aspect-square md:aspect-video rounded-xl mt-9">
           <Image
             src={post.image3}
             alt="alt"
-            width={200}
-            height={200}
-            className="my-auto pt-12"
+            fill={true}
+            className="my-auto rounded-xl object-cover"
           />
         </div>
         <div className="mt-6 flex flex-row justify-between text-[#222] text-xl font-mono font-thin">

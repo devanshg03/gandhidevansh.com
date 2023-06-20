@@ -17,7 +17,7 @@ export default function projectitem({
 }: ProjectItemProps) {
   return (
     <a href={url}>
-      <div className="bg-black w-96 h-96 flex flex-col items-center justify-center rounded-xl">
+      <div className="bg-black aspect-square flex flex-col items-center justify-center rounded-xl">
         <Image
           src={backgroundImg}
           alt="alt"

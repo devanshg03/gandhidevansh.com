@@ -10,13 +10,12 @@ export default function mywork() {
         Nola<span className="font-light">©</span>
       </h3>
 
-      <div className="bg-black w-full h-[595px] flex flex-col items-center justify-center rounded-xl mt-6">
+      <div className="bg-black w-full relative aspect-square md:aspect-video flex flex-col items-center justify-center rounded-xl mt-6">
         <Image
-          src="/assets/nola.png"
+          src="/assets/nola/1.jpg"
           alt="alt"
-          width={200}
-          height={200}
-          className="my-auto pt-12"
+          fill={true}
+          className="my-auto rounded-xl object-cover"
         />
       </div>
       <div className="mt-6 flex flex-row justify-between text-[#222] text-xl font-mono font-thin">
@@ -31,13 +30,12 @@ export default function mywork() {
         entrepreneur society hKU<span className="font-light">©</span>
       </h3>
 
-      <div className="bg-black w-full h-[595px] flex flex-col items-center justify-center rounded-xl mt-6">
+      <div className="bg-black w-full relative aspect-square md:aspect-video flex flex-col items-center justify-center rounded-xl mt-6">
         <Image
-          src="/assets/eso.png"
+          src="/assets/eso/1.jpg"
           alt="alt"
-          width={200}
-          height={200}
-          className="my-auto pt-12"
+          fill={true}
+          className="my-auto rounded-xl object-cover"
         />
       </div>
       <div className="mt-6 flex flex-row justify-between text-[#222] text-xl font-mono font-thin">
