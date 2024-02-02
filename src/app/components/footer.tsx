@@ -8,7 +8,7 @@ export default function footer() {
         how to reach me
       </h3>
       <p className="font-mono font-thin text-2xl md:text-3xl text-[#222] mt-6 md:w-6/12">
-        Looking to grow or build your startup in Asia?
+        Looking to grow or build your startup?
       </p>
       <p className="font-mono font-thin text-2xl md:text-3xl text-[#222] mt-12 md:w-6/12">
         Reach out, let’s get the conversation started and bounce some ideas.

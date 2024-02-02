@@ -23,7 +23,7 @@ export default function projectitem({
           alt="alt"
           width={width}
           height={200}
-          className="my-auto pt-12"
+          className="my-auto pt-12 shadow-sm shadow-black"
         />
         <p className="mt-0 mb-6 text-sm justify-self-end text-center">
           <span className="text-[#279AF1]">⌘</span>
