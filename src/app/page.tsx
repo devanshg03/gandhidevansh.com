@@ -11,7 +11,7 @@ export default function Home() {
         <title>Devansh G.</title>
         <meta
           name="description"
-          content="This is the personal website for Devansh Gandhi."
+          content="This is the personal website of Devansh Gandhi."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
