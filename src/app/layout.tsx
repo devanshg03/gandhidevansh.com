@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Berkley from "next/font/local";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Font files can be colocated inside of `app`
 const berkley = Berkley({
