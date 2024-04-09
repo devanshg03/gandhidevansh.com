@@ -34,6 +34,7 @@ export default function RootLayout({
       style={{ scrollBehavior: "smooth" }}
       lang="en"
     >
+      <SpeedInsights />
       <body className={`${inter.variable} ${berkley.variable}`}>
         <Navbar />
         {children}
