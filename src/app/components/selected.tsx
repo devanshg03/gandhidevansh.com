@@ -32,7 +32,7 @@ export default function mywork() {
 
       <div className="bg-black w-full relative aspect-square md:aspect-video flex flex-col items-center justify-center rounded-xl mt-6">
         <Image
-          src="/assets/eso/main.jpg"
+          src="/assets/eso/1.jpg"
           alt="alt"
           fill={true}
           className="my-auto rounded-xl object-cover"
