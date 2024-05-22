@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Berkley from "next/font/local";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 // Font files can be colocated inside of `app`
 const berkley = Berkley({
@@ -35,6 +36,7 @@ export default function RootLayout({
       lang="en"
     >
       <SpeedInsights />
+      <Analytics />
       <body className={`${inter.variable} ${berkley.variable}`}>
         <Navbar />
         {children}
