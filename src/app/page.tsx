@@ -24,7 +24,7 @@ export default function Home() {
           (MY PROJECTS)
         </h4>
         <h3 className="mt-6 text-4xl capitalize font-extrabold text-black">
-          what i’ve done
+          what i've done
         </h3>
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 w-full mt-6">
