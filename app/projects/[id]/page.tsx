@@ -45,63 +45,72 @@ export default async function BlogPost({
 
   return (
     <>
-      <div className="font-sans pt-[96px] w-full bg-white flex px-[10%] lg:px-[100px] flex-col">
-        <h1 className="uppercase text-4xl md:text-7xl font-extrabold text-black md:w-6/12 wrap-break-word">
-          {post.title}
-          <span className="font-light">©</span>
-        </h1>
-        <h2 className="font-mono font-thin text-xl md:text-3xl text-[#222] mt-2 md:w-6/12">
-          {post.subheading}
-        </h2>
+      <section className="font-sans w-full bg-white">
+        <div className="max-w-6xl mx-auto px-6 py-16">
+          <a
+            href="/projects"
+            className="inline-flex items-center h-8 px-3 rounded-full border border-black/10 bg-white text-black text-sm hover:bg-black/5"
+          >
+            ← Back to projects
+          </a>
 
-        <div className="bg-black w-full relative aspect-square md:aspect-video flex flex-col items-center justify-center rounded-xl mt-6">
-          <Image
-            src={post.image1}
-            alt="alt"
-            fill={true}
-            className="my-auto rounded-xl object-cover shadow-xs shadow-black"
-          />
-        </div>
+          <h1 className="mt-6 text-4xl md:text-6xl tracking-tight text-black whitespace-pre-line">
+            {post.title}
+          </h1>
+          <p className="text-base md:text-lg text-[#333] mt-3 max-w-3xl">
+            {post.subheading}
+          </p>
 
-        <h4
-          id="projects"
-          className="font-mono text-xl font-thin text-[#222] mt-24"
-        >
-          (DESCRIPTION)
-        </h4>
-        <h3 className="mt-6 text-3xl capitalize font-extrabold text-black">
-          What the project was
-        </h3>
+          <div className="relative mt-8 aspect-16/10 w-full overflow-hidden rounded-xl border border-black/5">
+            <Image
+              src={post.image1}
+              alt={post.title}
+              fill
+              className="object-cover"
+            />
+          </div>
 
-        <p className="mt-6 text-xl text-[#222]">{post.description1}</p>
-        <p className="mt-4 text-xl text-[#222]">{post.description2}</p>
+          <h5 id="projects" className="text-sm text-[#555] mt-16">
+            ✦ Description
+          </h5>
+          <h3 className="mt-3 text-2xl md:text-3xl text-black">
+            What the project was
+          </h3>
 
-        <div className="bg-black w-full relative aspect-square md:aspect-video rounded-xl mt-9">
-          <Image
-            src={post.image2}
-            alt="alt"
-            fill={true}
-            className="my-auto rounded-xl object-cover shadow-xs shadow-black"
-          />
-        </div>
-        <div className="mt-6 flex flex-row justify-between text-[#222] text-xl font-mono font-thin">
-          <h6>{post.caption1}</h6>
-          <p>({post.caption1year})</p>
-        </div>
+          <p className="mt-6 text-[#333] text-base md:text-lg">
+            {post.description1}
+          </p>
+          <p className="mt-4 text-[#333] text-base md:text-lg">
+            {post.description2}
+          </p>
 
-        <div className="bg-black w-full relative aspect-square md:aspect-video rounded-xl mt-9">
-          <Image
-            src={post.image3}
-            alt="alt"
-            fill={true}
-            className="my-auto rounded-xl object-cover shadow-xs shadow-black"
-          />
+          <div className="relative mt-9 aspect-16/10 w-full overflow-hidden rounded-xl border border-black/5">
+            <Image
+              src={post.image2}
+              alt={post.title}
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="mt-4 flex items-center justify-between text-[#666] text-sm">
+            <h6>{post.caption1}</h6>
+            <p>({post.caption1year})</p>
+          </div>
+
+          <div className="relative mt-9 aspect-16/10 w-full overflow-hidden rounded-xl border border-black/5">
+            <Image
+              src={post.image3}
+              alt={post.title}
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="mt-4 flex items-center justify-between text-[#666] text-sm">
+            <h6>{post.caption2}</h6>
+            <p>({post.caption2year})</p>
+          </div>
         </div>
-        <div className="mt-6 flex flex-row justify-between text-[#222] text-xl font-mono font-thin">
-          <h6>{post.caption2}</h6>
-          <p>({post.caption2year})</p>
-        </div>
-      </div>
+      </section>
     </>
   );
 }

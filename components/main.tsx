@@ -7,7 +7,7 @@ export function HeroSection(): React.JSX.Element {
         <h1 className="text-4xl md:text-6xl tracking-tight text-black">
           Devansh Gandhi
         </h1>
-        <p className="text-base md:text-lg text-[#333] mt-3 max-w-lg mx-auto">
+        <p className="text-base md:text-lg text-black/50 mt-3 max-w-lg mx-auto">
           I build humanistic simulations, foster communities, and craft products
           that make you go "wow."
         </p>

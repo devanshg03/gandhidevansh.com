@@ -10,7 +10,7 @@ export function ProjectsGrid(): React.JSX.Element {
             title="Cursor Hong Kong"
             subtitle="Building Hong Kong's Cursor community"
             image="/assets/cursor/1.jpeg"
-            url="/projects/cursor-hong-kong"
+            url="/projects/cursor-hk"
           />
           <ProjectCard
             title="Localhost"
