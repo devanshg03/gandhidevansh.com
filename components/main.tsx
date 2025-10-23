@@ -8,8 +8,8 @@ export function HeroSection(): React.JSX.Element {
           Devansh Gandhi
         </h1>
         <p className="text-base md:text-lg text-black/50 mt-3 max-w-lg mx-auto">
-          I build humanistic simulations, foster communities, and craft products
-          that make you go "wow."
+          I build humanistic simulations, foster communities, and craft seamless
+          products.
         </p>
         <div className="mt-6 flex items-center justify-center gap-3">
           <a
