@@ -1,5 +1,4 @@
 import Project from "./components/projectitem";
-import Head from "next/head";
 import Main from "./components/main";
 import About from "./components/about";
 import Selected from "./components/selected";
@@ -7,15 +6,6 @@ import Selected from "./components/selected";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Devansh G.</title>
-        <meta
-          name="description"
-          content="This is the personal website of Devansh Gandhi."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Main />
       <About />
       {/** My Work */}
