@@ -45,7 +45,6 @@ export function Footer(): React.JSX.Element {
           </div>
           <div className="flex items-center gap-4 flex-wrap">
             <a
-              target="_blank"
               href="mailto:hello@gandhidevansh.com"
               className="hover:underline"
             >
@@ -53,6 +52,7 @@ export function Footer(): React.JSX.Element {
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://x.com/itzdgofficial"
               className="hover:underline"
             >
@@ -60,6 +60,7 @@ export function Footer(): React.JSX.Element {
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://linkedin.com/in/gdevansh/"
               className="hover:underline"
             >

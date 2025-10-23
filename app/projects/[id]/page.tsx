@@ -61,10 +61,10 @@ export default async function BlogPost({
             {post.subheading}
           </p>
 
-          <div className="relative mt-8 aspect-16/10 w-full overflow-hidden rounded-xl border border-black/5">
+          <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-xl border border-black/5">
             <Image
               src={post.image1}
-              alt={post.title}
+              alt={`${post.title} - ${post.subheading}`}
               fill
               className="object-cover"
             />
@@ -86,10 +86,14 @@ export default async function BlogPost({
 
           {post.image2 && (
             <>
-              <div className="relative mt-8 aspect-16/10 w-full overflow-hidden rounded-xl border border-black/5">
+              <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-xl border border-black/5">
                 <Image
                   src={post.image2}
-                  alt={post.title}
+                  alt={
+                    post.caption1
+                      ? `${post.title} - ${post.caption1}`
+                      : `${post.title} project image`
+                  }
                   fill
                   className="object-cover"
                 />
@@ -105,10 +109,14 @@ export default async function BlogPost({
 
           {post.image3 && (
             <>
-              <div className="relative mt-8 aspect-16/10 w-full overflow-hidden rounded-xl border border-black/5">
+              <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-xl border border-black/5">
                 <Image
                   src={post.image3}
-                  alt={post.title}
+                  alt={
+                    post.caption2
+                      ? `${post.title} - ${post.caption2}`
+                      : `${post.title} project image`
+                  }
                   fill
                   className="object-cover"
                 />

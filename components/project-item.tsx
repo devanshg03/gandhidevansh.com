@@ -23,8 +23,13 @@ export function ProjectCard({
         </a>
       </div>
 
-      <div className="relative mt-4 aspect-16/10 w-full overflow-hidden rounded-lg bg-black/20">
-        <Image src={image} alt={title} fill className="object-cover" />
+      <div className="relative mt-4 aspect-video w-full overflow-hidden rounded-lg bg-black/20">
+        <Image
+          src={image}
+          alt={`Preview image for ${title} - ${subtitle}`}
+          fill
+          className="object-cover"
+        />
       </div>
     </div>
   );
