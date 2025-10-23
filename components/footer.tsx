@@ -10,7 +10,7 @@ export function Footer(): React.JSX.Element {
               ✦ Let's talk
             </h5>
             <h3 className="mt-3 text-3xl md:text-4xl text-black">
-              Ready to level up your design?
+              Open to interesting conversations
             </h3>
           </div>
           <div className="md:pt-8 flex items-start md:justify-end gap-3">

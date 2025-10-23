@@ -14,8 +14,8 @@ export function ProjectsIntro(): React.JSX.Element {
             </h3>
           </div>
           <p className="text-[#333] md:pt-8">
-            Projects that demonstrate how I solve business and product
-            challenges using design, tech, and finance.
+            From humanistic simulations to community-driven platforms. Explore
+            the products and experiences I've built to inspire and connect.
           </p>
         </div>
       </div>
