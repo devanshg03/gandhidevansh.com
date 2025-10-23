@@ -37,7 +37,10 @@ export default function RootLayout({
     >
       <SpeedInsights />
       <Analytics />
-      <body className={`${inter.variable} ${berkley.variable}`}>
+      <body
+        className={`${inter.variable} ${berkley.variable}`}
+        suppressHydrationWarning
+      >
         <Navbar />
         {children}
         <Footer />
