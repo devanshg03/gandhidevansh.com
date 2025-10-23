@@ -29,7 +29,7 @@
   }
   
   .font-mono {
-    font-family: var(--font-berkley);
+    font-family: var(--font-berkley) !important;
   }
 }
 
