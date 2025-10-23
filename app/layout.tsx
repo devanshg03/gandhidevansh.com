@@ -1,7 +1,8 @@
+import React from "react";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 import Berkley from "next/font/local";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
@@ -32,11 +33,13 @@ export const viewport = {
   initialScale: 1,
 };
 
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
+
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: RootLayoutProps): React.JSX.Element {
   return (
     <html
       className="scroll-smooth"

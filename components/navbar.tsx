@@ -1,4 +1,6 @@
-export default function navbar() {
+import React from "react";
+
+export function Navbar(): React.JSX.Element {
   return (
     <div className="font-sans w-full h-16 bg-white/80 backdrop-blur supports-backdrop-filter:bg-white/70 sticky top-0 z-50 border-b border-black/5">
       <div className="max-w-6xl mx-auto px-6 flex items-center h-full">

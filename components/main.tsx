@@ -1,4 +1,6 @@
-export default function main() {
+import React from "react";
+
+export function HeroSection(): React.JSX.Element {
   return (
     <section className="font-sans w-full bg-white">
       <div className="max-w-6xl mx-auto px-6 py-24 md:py-32 text-center">

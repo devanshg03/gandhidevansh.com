@@ -1,19 +1,26 @@
+import React from "react";
 import projectsData from "./projects.json";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import type { Project } from "@/types/project";
 
 export async function generateStaticParams() {
-  return projectsData.map((post: any) => ({
+  return projectsData.map((post: Project) => ({
     id: String(post.id),
   }));
 }
 
-async function fetchPost(id: string) {
-  const post = projectsData.find((post: any) => String(post.id) === id);
+async function fetchPost(id: string): Promise<Project | undefined> {
+  const post = projectsData.find((post: Project) => String(post.id) === id);
   return post;
 }
 
-export async function generateMetadata({ params }: any) {
+interface PageProps {
+  params: Promise<{ id: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}
+
+export async function generateMetadata({ params }: PageProps) {
   const { id } = await params;
   const post = await fetchPost(id);
 
@@ -25,7 +32,9 @@ export async function generateMetadata({ params }: any) {
   };
 }
 
-export default async function BlogPost({ params, searchParams }: any) {
+export default async function BlogPost({
+  params,
+}: PageProps): Promise<React.JSX.Element> {
   const { id } = await params;
 
   const post = await fetchPost(id);
@@ -33,6 +42,7 @@ export default async function BlogPost({ params, searchParams }: any) {
   if (!post) {
     notFound();
   }
+
   return (
     <>
       <div className="font-sans pt-[96px] w-full bg-white flex px-[10%] lg:px-[100px] flex-col">

@@ -1,18 +1,13 @@
+import React from "react";
 import Image from "next/image";
+import type { ProjectCardProps } from "@/types/project";
 
-interface ProjectCardProps {
-  title: string;
-  subtitle: string;
-  image: string;
-  url: string;
-}
-
-export default function ProjectCard({
+export function ProjectCard({
   title,
   subtitle,
   image,
   url,
-}: ProjectCardProps) {
+}: ProjectCardProps): React.JSX.Element {
   return (
     <div className="surface-card p-5 md:p-6">
       <div className="flex items-start gap-4">

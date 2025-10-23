@@ -1,4 +1,6 @@
-export default function footer() {
+import React from "react";
+
+export function Footer(): React.JSX.Element {
   return (
     <footer className="font-sans w-full bg-white">
       <div className="diagonal-pattern border-y border-black/5">

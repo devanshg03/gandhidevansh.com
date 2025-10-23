@@ -1,6 +1,8 @@
 "use client";
 
-export default function notFound() {
+import React from "react";
+
+export default function NotFound(): React.JSX.Element {
   return (
     <div className="font-sans px-[10%] flex flex-col items-center bg-black md:px-[100px] lg:px-[20%] py-48">
       <h1 className="text-5xl font-bold text-center">

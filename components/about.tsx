@@ -1,4 +1,6 @@
-export default function main() {
+import React from "react";
+
+export function ProjectsIntro(): React.JSX.Element {
   return (
     <section className="font-sans w-full bg-white">
       <div className="diagonal-pattern border-y border-black/5">
