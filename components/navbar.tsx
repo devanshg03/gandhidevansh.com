@@ -58,7 +58,7 @@ export function Navbar(): React.JSX.Element {
           </a>
           <a
             href="mailto:hello@gandhidevansh.com"
-            className="inline-flex items-center h-8 px-3 rounded-full border border-black/10 bg-black text-white text-sm hover:bg-black/90"
+            className="inline-flex items-center h-8 px-3 rounded-lg border border-black/10 bg-black text-white text-sm hover:bg-black/80 transition-all duration-200"
           >
             Say hi
           </a>

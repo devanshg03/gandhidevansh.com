@@ -13,16 +13,16 @@ export function Footer(): React.JSX.Element {
               Open to interesting conversations
             </h3>
           </div>
-          <div className="md:pt-8 flex items-start md:justify-end gap-4">
+          <div className="md:pt-8 flex items-start md:justify-end gap-2">
             <a
               href="#projects"
-              className="inline-flex items-center h-10 px-4 rounded-full border border-black/10 bg-white text-black hover:bg-black/5"
+              className="inline-flex items-center h-10 px-4 rounded-lg border border-black/10 bg-white text-black hover:bg-black/5 transition-all duration-200"
             >
               Look at my projects
             </a>
             <a
               href="mailto:hello@gandhidevansh.com"
-              className="inline-flex items-center h-10 px-4 rounded-full border border-black/10 bg-black text-white hover:bg-black/90"
+              className="inline-flex items-center h-10 px-4 rounded-lg border border-black/10 bg-black text-white hover:bg-black/80 transition-all duration-200"
             >
               Say hi
             </a>

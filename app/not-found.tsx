@@ -13,13 +13,13 @@ export default function NotFound(): React.JSX.Element {
         <div className="mt-8 flex items-center justify-center gap-4">
           <a
             href="/"
-            className="inline-flex items-center h-10 px-4 rounded-full border border-black/10 bg-black text-white hover:bg-black/90"
+            className="inline-flex items-center h-10 px-4 rounded-lg border border-black/10 bg-black text-white hover:bg-black/80 transition-all duration-200"
           >
             Back to Home
           </a>
           <a
             href="/#projects"
-            className="inline-flex items-center h-10 px-4 rounded-full border border-black/10 bg-white text-black hover:bg-black/5"
+            className="inline-flex items-center h-10 px-4 rounded-lg border border-black/10 bg-white text-black hover:bg-black/5 transition-all duration-200"
           >
             View projects
           </a>

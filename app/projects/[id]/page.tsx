@@ -49,7 +49,7 @@ export default async function BlogPost({
         <div className="max-w-6xl mx-auto px-6 py-16">
           <a
             href="/projects"
-            className="inline-flex items-center h-8 px-3 rounded-full border border-black/10 bg-white text-black text-sm hover:bg-black/5"
+            className="inline-flex items-center h-8 px-3 rounded-lg border border-black/10 bg-white text-black text-sm hover:bg-black/5 transition-all duration-200"
           >
             ← Back to projects
           </a>

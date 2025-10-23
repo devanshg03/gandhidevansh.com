@@ -40,13 +40,6 @@ body {
 
 /* Design helpers */
 @layer utilities {
-  .surface-card {
-    background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
-  }
-
   .diagonal-pattern {
     background-image: repeating-linear-gradient(
       -45deg,
