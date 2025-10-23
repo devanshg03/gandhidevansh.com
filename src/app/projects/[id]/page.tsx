@@ -15,7 +15,7 @@ async function fetchPost(id: string) {
 }
 
 export default async function BlogPost({ params, searchParams }: any) {
-  const { id } = params;
+  const { id } = await params;
 
   const post = await fetchPost(id);
 
