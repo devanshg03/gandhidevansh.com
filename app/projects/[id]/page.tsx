@@ -84,31 +84,43 @@ export default async function BlogPost({
             {post.description2}
           </p>
 
-          <div className="relative mt-9 aspect-16/10 w-full overflow-hidden rounded-xl border border-black/5">
-            <Image
-              src={post.image2}
-              alt={post.title}
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="mt-4 flex items-center justify-between text-[#666] text-sm">
-            <h6>{post.caption1}</h6>
-            <p>({post.caption1year})</p>
-          </div>
+          {post.image2 && (
+            <>
+              <div className="relative mt-9 aspect-16/10 w-full overflow-hidden rounded-xl border border-black/5">
+                <Image
+                  src={post.image2}
+                  alt={post.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              {(post.caption1 || post.caption1year) && (
+                <div className="mt-4 flex items-center justify-between text-[#666] text-sm">
+                  <h6>{post.caption1}</h6>
+                  {post.caption1year && <p>({post.caption1year})</p>}
+                </div>
+              )}
+            </>
+          )}
 
-          <div className="relative mt-9 aspect-16/10 w-full overflow-hidden rounded-xl border border-black/5">
-            <Image
-              src={post.image3}
-              alt={post.title}
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="mt-4 flex items-center justify-between text-[#666] text-sm">
-            <h6>{post.caption2}</h6>
-            <p>({post.caption2year})</p>
-          </div>
+          {post.image3 && (
+            <>
+              <div className="relative mt-9 aspect-16/10 w-full overflow-hidden rounded-xl border border-black/5">
+                <Image
+                  src={post.image3}
+                  alt={post.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              {(post.caption2 || post.caption2year) && (
+                <div className="mt-4 flex items-center justify-between text-[#666] text-sm">
+                  <h6>{post.caption2}</h6>
+                  {post.caption2year && <p>({post.caption2year})</p>}
+                </div>
+              )}
+            </>
+          )}
         </div>
       </section>
     </>

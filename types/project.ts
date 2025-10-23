@@ -5,12 +5,12 @@ export interface Project {
   description1: string;
   description2: string;
   image1: string;
-  image2: string;
-  image3: string;
-  caption1: string;
-  caption2: string;
-  caption1year: string;
-  caption2year: string;
+  image2?: string;
+  image3?: string;
+  caption1?: string;
+  caption2?: string;
+  caption1year?: string;
+  caption2year?: string;
 }
 
 export interface ProjectCardProps {
@@ -19,4 +19,3 @@ export interface ProjectCardProps {
   image: string;
   url: string;
 }
-
