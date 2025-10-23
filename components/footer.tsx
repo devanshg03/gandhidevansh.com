@@ -31,7 +31,18 @@ export function Footer(): React.JSX.Element {
       </div>
       <div className="border-t border-black/5">
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between text-sm text-[#555]">
-          <span>Devansh Gandhi</span>
+          <div className="flex items-center gap-2 flex-wrap">
+            <span>Devansh Gandhi</span>
+            <span className="text-[#999]">·</span>
+            <a
+              href="https://www.mahlke.design/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Inspired by Aaron Mahlke
+            </a>
+          </div>
           <div className="flex items-center gap-4">
             <a
               target="_blank"
