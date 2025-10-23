@@ -4,16 +4,16 @@ export function Footer(): React.JSX.Element {
   return (
     <footer className="font-sans w-full bg-white">
       <div className="diagonal-pattern border-y border-black/5">
-        <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <div>
             <h5 id="contact" className="text-sm text-[#555]">
               ✦ Let's talk
             </h5>
-            <h3 className="mt-3 text-3xl md:text-4xl text-black">
+            <h3 className="mt-4 text-3xl md:text-4xl text-black">
               Open to interesting conversations
             </h3>
           </div>
-          <div className="md:pt-8 flex items-start md:justify-end gap-3">
+          <div className="md:pt-8 flex items-start md:justify-end gap-4">
             <a
               href="#projects"
               className="inline-flex items-center h-10 px-4 rounded-full border border-black/10 bg-white text-black hover:bg-black/5"
@@ -30,7 +30,7 @@ export function Footer(): React.JSX.Element {
         </div>
       </div>
       <div className="border-t border-black/5">
-        <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between text-sm text-[#555]">
+        <div className="max-w-6xl mx-auto px-6 py-4 md:h-14 md:py-0 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-0 text-sm text-[#555]">
           <div className="flex items-center gap-2 flex-wrap">
             <span>Devansh Gandhi</span>
             <span className="text-[#999]">·</span>
@@ -43,7 +43,7 @@ export function Footer(): React.JSX.Element {
               Inspired by Aaron Mahlke
             </a>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 flex-wrap">
             <a
               target="_blank"
               href="mailto:hello@gandhidevansh.com"

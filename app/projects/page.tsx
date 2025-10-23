@@ -12,10 +12,10 @@ export default function ProjectsPage(): React.JSX.Element {
     <>
       <section className="font-sans w-full bg-white">
         <div className="diagonal-pattern border-y border-black/5">
-          <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             <div>
               <h5 className="text-sm text-[#555]">✦ Projects</h5>
-              <h1 className="mt-3 text-4xl md:text-5xl tracking-tight text-black">
+              <h1 className="mt-4 text-4xl md:text-5xl tracking-tight text-black">
                 A Curated Collection
               </h1>
             </div>

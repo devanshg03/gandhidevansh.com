@@ -54,10 +54,10 @@ export default async function BlogPost({
             ← Back to projects
           </a>
 
-          <h1 className="mt-6 text-4xl md:text-6xl tracking-tight text-black whitespace-pre-line">
+          <h1 className="mt-8 text-4xl md:text-6xl tracking-tight text-black whitespace-pre-line">
             {post.title}
           </h1>
-          <p className="text-base md:text-lg text-[#333] mt-3 max-w-3xl">
+          <p className="text-base md:text-lg text-[#333] mt-4 max-w-3xl">
             {post.subheading}
           </p>
 
@@ -73,7 +73,7 @@ export default async function BlogPost({
           <h5 id="projects" className="text-sm text-[#555] mt-16">
             ✦ Description
           </h5>
-          <h3 className="mt-3 text-2xl md:text-3xl text-black">
+          <h3 className="mt-4 text-2xl md:text-3xl text-black">
             What the project was
           </h3>
 
@@ -86,7 +86,7 @@ export default async function BlogPost({
 
           {post.image2 && (
             <>
-              <div className="relative mt-9 aspect-16/10 w-full overflow-hidden rounded-xl border border-black/5">
+              <div className="relative mt-8 aspect-16/10 w-full overflow-hidden rounded-xl border border-black/5">
                 <Image
                   src={post.image2}
                   alt={post.title}
@@ -105,7 +105,7 @@ export default async function BlogPost({
 
           {post.image3 && (
             <>
-              <div className="relative mt-9 aspect-16/10 w-full overflow-hidden rounded-xl border border-black/5">
+              <div className="relative mt-8 aspect-16/10 w-full overflow-hidden rounded-xl border border-black/5">
                 <Image
                   src={post.image3}
                   alt={post.title}
