@@ -19,7 +19,7 @@ export function ProjectsGrid(): React.JSX.Element {
             url="/projects/localhost"
           />
           <ProjectCard
-            title="HKU AI Literacy 1"
+            title="HKU AI Literacy I"
             subtitle="Hong Kong's first UG-level AI literacy course"
             image="/assets/hku-ai.jpg"
             url="/projects/hku-ai-literacy"

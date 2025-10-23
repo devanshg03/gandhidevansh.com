@@ -2,6 +2,7 @@ import React from "react";
 import projectsData from "./projects.json";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 import type { Project } from "@/types/project";
 
 export async function generateStaticParams() {
@@ -47,12 +48,12 @@ export default async function BlogPost({
     <>
       <section className="font-sans w-full bg-white">
         <div className="max-w-6xl mx-auto px-6 py-16">
-          <a
+          <Link
             href="/projects"
             className="inline-flex items-center h-8 px-3 rounded-lg border border-black/10 bg-white text-black text-sm hover:bg-black/5 transition-all duration-200"
           >
             ← Back to projects
-          </a>
+          </Link>
 
           <h1 className="mt-8 text-4xl md:text-6xl tracking-tight text-black whitespace-pre-line">
             {post.title}
