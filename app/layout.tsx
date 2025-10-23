@@ -22,6 +22,14 @@ const inter = Inter({
 export const metadata = {
   title: "Devansh G.",
   description: "This is the personal website of Devansh Gandhi.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

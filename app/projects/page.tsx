@@ -1,18 +1,8 @@
 import Image from "next/image";
-import Head from "next/head";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Devansh G.</title>
-        <meta
-          name="description"
-          content="This is the personal website for Devansh Gandhi."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className="font-sans pt-[96px] w-full bg-white flex px-[10%] lg:px-[100px] flex-col">
         <h1 className="uppercase text-5xl md:text-7xl font-extrabold text-black">
           NOLA<span className="font-light">©</span>

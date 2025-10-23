@@ -1,7 +1,6 @@
 import projectsData from "./projects.json";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import Head from "next/head";
 
 export async function generateStaticParams() {
   return projectsData.map((post: any) => ({
@@ -14,6 +13,18 @@ async function fetchPost(id: string) {
   return post;
 }
 
+export async function generateMetadata({ params }: any) {
+  const { id } = await params;
+  const post = await fetchPost(id);
+
+  return {
+    title: post ? `${post.title} | Devansh G.` : "Devansh G.",
+    description: post
+      ? post.subheading
+      : "This is the personal website for Devansh Gandhi.",
+  };
+}
+
 export default async function BlogPost({ params, searchParams }: any) {
   const { id } = await params;
 
@@ -24,15 +35,6 @@ export default async function BlogPost({ params, searchParams }: any) {
   }
   return (
     <>
-      <Head>
-        <title>Devansh G.</title>
-        <meta
-          name="description"
-          content="This is the personal website for Devansh Gandhi."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className="font-sans pt-[96px] w-full bg-white flex px-[10%] lg:px-[100px] flex-col">
         <h1 className="uppercase text-4xl md:text-7xl font-extrabold text-black md:w-6/12 wrap-break-word">
           {post.title}
