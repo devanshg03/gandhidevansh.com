@@ -9,19 +9,19 @@ export function ProjectsGrid(): React.JSX.Element {
           <ProjectCard
             title="Cursor Hong Kong"
             subtitle="Building Hong Kong's Cursor community"
-            image="/assets/cursor-hk.png"
+            image="/assets/cursor/1.jpeg"
             url="/projects/cursor-hong-kong"
           />
           <ProjectCard
             title="Localhost"
             subtitle="Hong Kong's first coworking for builders"
-            image="/assets/localhost.png"
+            image="/assets/localhost.jpg"
             url="/projects/localhost"
           />
           <ProjectCard
             title="HKU AI Literacy 1"
             subtitle="Hong Kong's first UG-level AI literacy course"
-            image="/assets/hku-ai.png"
+            image="/assets/hku-ai.jpg"
             url="/projects/hku-ai-literacy"
           />
           <ProjectCard
