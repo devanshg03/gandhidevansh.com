@@ -1,124 +1,33 @@
-import Image from "next/image";
+import React from "react";
+import { ProjectsGrid } from "@/components/projects-grid";
 
-export default function Home() {
+export const metadata = {
+  title: "Projects | Devansh G.",
+  description:
+    "Explore a curated collection of projects spanning communities, products, and experiences.",
+};
+
+export default function ProjectsPage(): React.JSX.Element {
   return (
     <>
-      <div className="font-sans pt-[96px] w-full bg-white flex px-[10%] lg:px-[100px] flex-col">
-        <h1 className="uppercase text-5xl md:text-7xl font-extrabold text-black">
-          NOLA<span className="font-light">©</span>
-        </h1>
-        <h2 className="font-mono font-thin text-xl md:text-3xl text-[#222] mt-2 md:w-6/12">
-          A foodtech & consumer tech startup that made granola bars at the click
-          of a button.
-        </h2>
+      <section className="font-sans w-full bg-white">
+        <div className="diagonal-pattern border-y border-black/5">
+          <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            <div>
+              <h5 className="text-sm text-[#555]">✦ Projects</h5>
+              <h1 className="mt-4 text-4xl md:text-5xl tracking-tight text-black">
+                A Curated Collection
+              </h1>
+            </div>
+            <p className="text-[#333] md:pt-8">
+              From humanistic simulations to community-driven platforms — a
+              selection of things I built, organized, and shipped.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <div className="bg-black w-full h-[595px] flex flex-col items-center justify-center rounded-xl mt-24">
-          <Image
-            src="/assets/petsimplified.png"
-            alt="alt"
-            width={200}
-            height={200}
-            className="my-auto pt-12"
-          />
-        </div>
-
-        <h4
-          id="projects"
-          className="font-mono text-xl font-thin text-[#222] mt-24"
-        >
-          (DESCRIPTION)
-        </h4>
-        <h3 className="mt-6 text-4xl capitalize font-extrabold text-black">
-          What the project was
-        </h3>
-
-        <p className="mt-6 text-xl text-[#222]">
-          Nola was a startup of mine that started over the summer of 2022. I
-          joined the InnoX Summer Camp held by Hong Kong X Foundation.
-          Throughout the bootcamp, we applied the design thinking framework,
-          along with a LEAN Startup mindset to solve problems we were passionate
-          about. With a theme of ‘Green Living’ we decided to focus on getting
-          quality, nutritions food on the go, while forgoing plastic waste. We
-          settled on the idea of building a granola bar machine.
-        </p>
-        <p className="mt-4 text-xl text-[#222]">
-          After winning the camp, my team and I decided to put the prize money
-          from the camp towards product development, and pursue this as a real
-          startup. Throughout the course of the next six months, we build
-          countless prototypes of the machine, and I had to learn all aspects of
-          running a startup, from fund raising to talking to potential customers
-          to 3D design and prototyping. My co-founders contributed with their
-          knowledge of Food Science and Product Design.
-        </p>
-
-        <div className="bg-black w-full h-[595px] flex flex-col items-center justify-center rounded-xl mt-24">
-          <Image
-            src="/assets/petsimplified.png"
-            alt="alt"
-            width={200}
-            height={200}
-            className="my-auto pt-12"
-          />
-        </div>
-        <div className="mt-6 flex flex-row justify-between text-[#222] text-xl font-mono font-thin">
-          <h6>
-            A foodtech & consumer tech startup that made granola bars at the
-            click of a button.
-          </h6>
-          <p>(2022)</p>
-        </div>
-
-        <div className="bg-black w-full h-[595px] flex flex-col items-center justify-center rounded-xl mt-9">
-          <Image
-            src="/assets/petsimplified.png"
-            alt="alt"
-            width={200}
-            height={200}
-            className="my-auto pt-12"
-          />
-        </div>
-        <div className="mt-6 flex flex-row justify-between text-[#222] text-xl font-mono font-thin">
-          <h6>
-            A foodtech & consumer tech startup that made granola bars at the
-            click of a button.
-          </h6>
-          <p>(2022)</p>
-        </div>
-
-        <div className="bg-black w-full h-[595px] flex flex-col items-center justify-center rounded-xl mt-9">
-          <Image
-            src="/assets/petsimplified.png"
-            alt="alt"
-            width={200}
-            height={200}
-            className="my-auto pt-12"
-          />
-        </div>
-        <div className="mt-6 flex flex-row justify-between text-[#222] text-xl font-mono font-thin">
-          <h6>
-            A foodtech & consumer tech startup that made granola bars at the
-            click of a button.
-          </h6>
-          <p>(2022)</p>
-        </div>
-
-        <div className="bg-black w-full h-[595px] flex flex-col items-center justify-center rounded-xl mt-9">
-          <Image
-            src="/assets/petsimplified.png"
-            alt="alt"
-            width={200}
-            height={200}
-            className="my-auto pt-12"
-          />
-        </div>
-        <div className="mt-6 flex flex-row justify-between text-[#222] text-xl font-mono font-thin">
-          <h6>
-            A foodtech & consumer tech startup that made granola bars at the
-            click of a button.
-          </h6>
-          <p>(2022)</p>
-        </div>
-      </div>
+      <ProjectsGrid />
     </>
   );
 }
