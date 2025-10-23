@@ -2,6 +2,8 @@
 
 import React, { useEffect, useRef } from "react";
 import { animate } from "animejs";
+import DecisionsLabCitation from "./decisions-lab-citation";
+import CursorCitation from "./cursor-citation";
 
 export function HeroSection(): React.JSX.Element {
   const nameRef = useRef<HTMLHeadingElement>(null);
@@ -42,8 +44,8 @@ export function HeroSection(): React.JSX.Element {
           ref={descRef}
           className="text-base md:text-lg text-black/50 mt-4 max-w-lg mx-auto opacity-0"
         >
-          I build humanistic simulations, foster communities, and craft seamless
-          products.
+          I work on human simulations <DecisionsLabCitation /> and build cool
+          communities <CursorCitation />.
         </p>
         <div className="mt-8 flex items-center justify-center gap-2">
           <a
