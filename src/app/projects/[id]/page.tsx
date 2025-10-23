@@ -34,7 +34,7 @@ export default async function BlogPost({ params, searchParams }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="font-sans pt-[96px] w-full bg-white flex px-[10%] lg:px-[100px] flex-col">
-        <h1 className="uppercase text-4xl md:text-7xl font-extrabold text-[#000] md:w-6/12 break-words">
+        <h1 className="uppercase text-4xl md:text-7xl font-extrabold text-black md:w-6/12 wrap-break-word">
           {post.title}
           <span className="font-light">©</span>
         </h1>
@@ -47,7 +47,7 @@ export default async function BlogPost({ params, searchParams }: any) {
             src={post.image1}
             alt="alt"
             fill={true}
-            className="my-auto rounded-xl object-cover shadow-sm shadow-black"
+            className="my-auto rounded-xl object-cover shadow-xs shadow-black"
           />
         </div>
 
@@ -69,7 +69,7 @@ export default async function BlogPost({ params, searchParams }: any) {
             src={post.image2}
             alt="alt"
             fill={true}
-            className="my-auto rounded-xl object-cover shadow-sm shadow-black"
+            className="my-auto rounded-xl object-cover shadow-xs shadow-black"
           />
         </div>
         <div className="mt-6 flex flex-row justify-between text-[#222] text-xl font-mono font-thin">
@@ -82,7 +82,7 @@ export default async function BlogPost({ params, searchParams }: any) {
             src={post.image3}
             alt="alt"
             fill={true}
-            className="my-auto rounded-xl object-cover shadow-sm shadow-black"
+            className="my-auto rounded-xl object-cover shadow-xs shadow-black"
           />
         </div>
         <div className="mt-6 flex flex-row justify-between text-[#222] text-xl font-mono font-thin">

@@ -14,7 +14,7 @@ export default function footer() {
         Reach out, let’s get the conversation started and bounce some ideas.
       </p>
 
-      <h1 className="mt-24 uppercase text-5xl md:text-7xl font-extrabold text-[#000]">
+      <h1 className="mt-24 uppercase text-5xl md:text-7xl font-extrabold text-black">
         Devansh Gandhi <br /> Venture builder
       </h1>
 

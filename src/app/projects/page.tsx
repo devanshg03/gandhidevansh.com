@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="font-sans pt-[96px] w-full bg-white flex px-[10%] lg:px-[100px] flex-col">
-        <h1 className="uppercase text-5xl md:text-7xl font-extrabold text-[#000]">
+        <h1 className="uppercase text-5xl md:text-7xl font-extrabold text-black">
           NOLA<span className="font-light">©</span>
         </h1>
         <h2 className="font-mono font-thin text-xl md:text-3xl text-[#222] mt-2 md:w-6/12">
