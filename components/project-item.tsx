@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useTransition, useState, useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import type { ProjectCardProps } from "@/types/project";
@@ -11,48 +9,10 @@ export function ProjectCard({
   image,
   url,
 }: ProjectCardProps): React.JSX.Element {
-  const [isPending, startTransition] = useTransition();
-  const [isExpanding, setIsExpanding] = useState(false);
-  const [cardStyle, setCardStyle] = useState<React.CSSProperties>({});
-  const cardRef = useRef<HTMLAnchorElement>(null);
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-
-    if (cardRef.current) {
-      const rect = cardRef.current.getBoundingClientRect();
-
-      // Set initial position
-      setCardStyle({
-        position: "fixed",
-        top: `${rect.top}px`,
-        left: `${rect.left}px`,
-        width: `${rect.width}px`,
-        height: `${rect.height}px`,
-      });
-
-      // Force reflow to apply initial styles
-      cardRef.current.offsetHeight;
-
-      setIsExpanding(true);
-
-      startTransition(() => {
-        setTimeout(() => {
-          window.location.href = url;
-        }, 600);
-      });
-    }
-  };
-
   return (
     <Link
-      ref={cardRef}
       href={url}
-      onClick={handleClick}
-      style={isExpanding ? cardStyle : undefined}
-      className={`project-card block bg-white border border-black/8 rounded-xl shadow-[0_12px_40px_rgba(0,0,0,0.06)] overflow-hidden cursor-pointer transition-all duration-500 ease-out hover:border-6 ${
-        isExpanding ? "project-card-expanding" : ""
-      }`}
+      className="block bg-white border border-black/8 rounded-xl shadow-[0_12px_40px_rgba(0,0,0,0.06)] overflow-hidden cursor-pointer transition-all duration-200 ease-in-out hover:border-6"
     >
       <div className="p-4 md:p-6">
         <div className="flex items-start gap-4">

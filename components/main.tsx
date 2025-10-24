@@ -7,7 +7,7 @@ import CursorCitation from "./cursor-citation";
 
 export function HeroSection(): React.JSX.Element {
   const nameRef = useRef<HTMLHeadingElement>(null);
-  const descRef = useRef<HTMLParagraphElement>(null);
+  const descRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (nameRef.current) {
@@ -40,13 +40,13 @@ export function HeroSection(): React.JSX.Element {
         >
           Devansh Gandhi
         </h1>
-        <p
+        <div
           ref={descRef}
           className="text-base md:text-lg text-black/50 mt-4 max-w-lg mx-auto opacity-0"
         >
           I work on human simulations <DecisionsLabCitation /> and build cool
           communities <CursorCitation />.
-        </p>
+        </div>
         <div className="mt-8 flex items-center justify-center gap-2">
           <a
             href="#projects"
